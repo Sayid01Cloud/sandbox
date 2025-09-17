@@ -1,0 +1,52 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+   
+   #main-footer {
+  background-color: #000;   /* svart bakgrunn */
+  color: #fff;              /* hvit tekst */
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+#main-footer a {
+  color: #fff;              /* hvite lenker */
+  text-decoration: none;
+}
+
+#main-footer a:hover {
+  text-decoration: underline; /* enkel hover-effekt */
+}
+
+#main-footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;          /* gjør at det bryter på små skjermer */
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+#main-footer .footer-content div {
+  margin: 0.5rem;
+}
+
+#main-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main-footer li {
+  margin: 0.3rem 0;
+}
+
+#main-footer .footer-bottom {
+  border-top: 1px solid #444; /* subtil linje for å skille bunnteksten */
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+}
