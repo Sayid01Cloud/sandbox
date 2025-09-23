@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> sayid - elendig utvikler</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css" href="css/øving.css">
+    <title>CSS grid</title>
 </head>
 <body>
-    <header>
-        <h1> sayid </h1>
-        <p> går første året i hiof </p>
-        <nav>
-            <ul>
-                <li> liker å spille basket </li>
-                <li> gå på tur </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id= "om meg">
-            <h2> om meg </h2>
-            <p> hei jeg er elendig web utvikler og har forskjellige intresser </p>
-            <h3> mine ferdigheter så langt </h3>
-            <ul>
-                <li> lage overskrift </li>
-                <li> klarer å bruke tagger litt, men blander </li>
-                <li> kan sette inn bilder, men må lære meg css </li>
-            </ul>
-        </section>
-        <aside>
-            <h2> andre utmerkelser</h2>
-            <p>jeg snakker 3 språk og kan hilse samt introdusere meg selv på flere andre</p>
-        </aside>
-    </main>
-        <footer id="kontakt">
-            <h2>kontakt informasjon</h2>
-            <p> epost: <a href="mailto: sayid@elendigutvikler.no"> sayid@elendigutvikler.no</a>
-            </p>
-            <div>
-                <h3>følg meg</h3>
+    <div id="grid-container">
+        <header>
+            <span id="logo"><a href="index.html">logo</a></span>
+            <nav>
                 <ul>
-                    <li> <a href="https://github.com/Sayid01Cloud">github</a> </li>
+                    <li> <a href="#">home</a></li>
+                    <li> <a href="#">product</a></li>
+                    <li> <a href="#">blog</a></li>
+                    <li> <a href="#">about</a></li>
                 </ul>
-            </div>
-
-
+            </nav>
+        </header>
+        <main id="mansory-grid">
+            <h2>Temaer</h2>
+            <section id="natur">
+                <h3>Naturfenomener</h3>
+            </section>
+            <section id="science">
+                <h3>Vitenskapelige oppdagelser</h3>
+            </section>
+            <section id="animal">
+                <h3>Dyr og dyreatferd</h3>
+            </section>
+            <section id="tech">
+                <h3>Teknologiens utvikling</h3>
+            </section>
+            <section id="culture">
+                <h3>Kulturelle tradisjoner</h3>
+            </section>
+            <section id="history">
+                <h3>Historiske oppfinnelser</h3>
+            </section>
+            <section id="geo">
+                <h3>Geografiske landemerker</h3>
+            </section>
+            <section id="food">
+                <h3>Mat og kulinariske tradisjoner</h3>
+            </section>
+        </main>
+        <footer>
+            <p>@anncharlott</p>
         </footer>
-    
+    </div>
 </body>
 </html>

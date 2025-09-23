@@ -3,23 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oppgaver uke 37css</title>
-    <link rel="stylesheet" type="text/css" href= "css/#stylesheetuke37.css">
-</head>
+    <title>Øving boxmodell</title>
+    <link rel="stylesheet" href="css/øving.css">
 
+    </head>
 <body>
-    <header class="site-header">REISELIV</header>
-    <nav class="main-nav"></nav>
-    <main class="container">
+    <header id="global-header">
+        <h1 id="main logo">Mitt logo</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Hjem</a>
+                </li>
+                <li> 
+                <a href="#">Om oss</a>
+            </li>
+                <li></li>
+                <a href="#">Tjenester</a>
+            </li>
+                <li>
+                <a href="#">kontakt oss</a>
+            </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
         <article>
-
+            <h2>Artikkel 1</h2>
         </article>
-        <aside>
+        <p>innhold her</p>
+        <article>Artikkel 2</article>
+        <p>Mer innhold her</p>
 
-        </aside>
     </main>
-    <footer>
+    <aside>
+        <h3>
+            sidekolonne
+        </h3>
+        <ul>
+            <li>
+                <a href="#">lenke 1</a>
+            </li>
+            <li> 
+                <a href="#"> lenke 2</a>
+                </li>
+        </ul>
+    </aside>
 
+    <footer>
+        <p>
+            &copy; 2025 Mitt nettside
+        </p>
+        <form>
+            <label for="navn"> Navn:</label>
+            <input type="text" id="navn">
+            <label for="melding">melding:</label>
+            <textarea id="melding"></textarea>
+            <button class="btn">send</button>
+            <a href="#" class="google-btn"> logg inn med google</a>
+        </form>
     </footer>
+    
+    
 </body>
 </html>
