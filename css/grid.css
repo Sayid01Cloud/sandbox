@@ -1,38 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-*{
-    box-sizing: border-box;
+/* Hele siden i grid */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #faf7f4;
+  color: #333;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
 }
 
-#grid-container{
-
-    display: grid;
-    grid-template-areas: 
-        "header header header"
-        "main main aside"
-        "footer footer footer";
-    grid-template-columns: 2fr 2fr 1fr; /* main får 2/3, aside 1/3 */
-    grid-template-rows: auto 1fr auto;  /* header øverst, main/aside i midten, footer nederst */
-    gap: 1rem;
-    min-height: 100vh; /* fyller hele høyden */
-    font-family: 'Courier New', Courier, monospace;
+/* Header */
+header {
+  grid-area: header;
+  background-color: #d4a373;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
 }
 
-#page-header{
-    grid-area: header;
-}
-main{
-    grid-area: main;
-    background: #d2e1b3
-}
-
-aside{
-    grid-area: aside;
-    Background-colo: #565353
+/* Navigasjon */
+nav {
+  grid-area: nav;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0.8rem;
 }
 
-footer{
-    grid-area: footer;
-    background-color: #efefee
-    
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main-område */
+main {
+  grid-area: main;
+  padding: 2rem;
+  display: grid;
+  gap: 2rem;
+}
+
+/* Seksjon styling */
+section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex for meny + drikke */
+.flex-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Når skjermen blir bredere */
+@media (min-width: 768px) {
+  .flex-sections {
+    flex-direction: row;
+  }
+
+  .flex-sections section {
+    flex: 1; /* deler plassen likt */
+  }
+}
+
+/* Footer */
+footer {
+  grid-area: footer;
+  background-color: #222;
+  color: #ddd;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin: 0.5rem 0;
 }
